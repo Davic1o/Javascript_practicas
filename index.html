@@ -4,28 +4,212 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadoras Basicas</title>
+    <link rel="stylesheet" href="styles/loader.css">
+    <link rel="icon" href="/img/calculadora.png">
+    <script src="/src/figuras.js"></script>
+    <title>Calculadoras</title>
 </head>
 <body>
-<header>
-<h1>Calculadoras Basicas</h1>
-<p>Esta pagina tendras las calculadoras que neceistas apra poder desasrrollar cualquier actividad</p>
-</header>
-<main>
-    <nav>
-      <ul>
-          <li>
-            <a href="figuras.html">Calculadora de Geometrica</a>
-          </li>
-          <li>
-              <a href="calculadora.html">Calculadora Basica</a>
-          </li>
-          <li>
-              <a href="descuentos.html">Calculadora de descuentos</a>
-          </li>
-      </ul>  
-    </nav>
-</main>    
+    <div class="page">
+      <!-- Main Content -->
+      <section class="container">
+        <nav class="navbar">
+          <div class="navbar__content">
+            <img src="/img/Calculator_30001.png" alt="Logo">
+            <ul>
+              <li><a href="/">HOME</a></li>
+              <li><a href="/">SKILLS</a></li>
+              <li><a href="/">PORTFOLIO</a></li>
+              <li><a href="/">CONTACT</a></li>
+            </ul>
+          </div>
+        </nav>
+        <section class="main-content">
+          <p>Calculadora Basica</p>
+          <p></p>
+    
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+        </section>
+        <aside class="side-content">
+          <p>BETA</p>
+          <img src="/img/calculadora.png" alt="Mocha">
+          <div></div>
+        </aside>
+        <footer class="footer">
+          <div id="button1">
+            <img src="/img/pngwing.com.png" alt="Mocha">
+          </div>
+          <div id="button2">
+            <img src="/img/percentage_icon_129093.png" alt="Mocha">
+          </div>
+          <div id="button3">
+            <img src="/img/Funcion.png" alt="Mocha">
+          </div>
+        </footer>
+      </section>
+      <!-- Loader -->
+      <section class="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+  
+      <!-- Modal -->
+      <section class="modal hidden">
+        <div class="modal-content">
+          <img class="modal-content__close" src="https://img.icons8.com/windows/32/000000/macos-close.png" alt="ícono de cerrar" />
+  
+          <div class="modal-content__slider">
+            <input class="check" type="radio" name="slider-1" id="radio-1" checked>
+            <input class="check" type="radio" name="slider-1" id="radio-2">
+            <input class="check" type="radio" name="slider-1" id="radio-3">
+  
+            <div class="cards">
+              <label class="card" for="radio-1" id="card-1">
+                <h2>Calcula el area y perimetro de un cuadrado</h2>
+                
+                    <label for="InputCuadrado">
+                        Escribe cuanto mide cada lado del cuadrado
+                    </label>
+                        <input type="number" name="" id="InputCuadrado">
+                        <button class="modal-content__button1" type="button" onclick="calcularPerimetroCuadrado()">
+                            Calcule el perimetro
+                        </button>
+                        <button class="modal-content__button1" type="button" onclick="calcularAreacuadrado()">
+                            Calcule el area
+                        </button> 
+              </label>
+              <label class="card" for="radio-2" id="card-2">
+                <h2>Calcula el area y perimetro de un tringulo</h2>
+                <label for="InputCuadrado">
+                   Escribe cuanto mide cada lado 1 del triangulo
+                </label>
+                    <input type="number" name="" id="InputTriangulo1">
+                   <label for="InputTriangulo1">
+                       Escribe cuanto mide cada lado 2 del triangulo
+                   </label>
+                        <input type="number" name="" id="InputTriangulo2">
+                   <label for="InputTriangulo2">
+                           Escribe cuanto mide cada lado 3 del triangulo
+                   </label>
+                       <input type="number" name="" id="InputTriangulo3">
+                           <label for="InputTriangulo3">
+                               Escribe cuanto valeangulo entre lado1 y lado 2
+                           </label>
+                               <input type="number" name="" id="Angulo">
+                   <button class="modal-content__button1" type="button" onclick="calcularPerimetroTriangulo()">
+                        Calcule el perimetro
+                   </button>
+                   <button class="modal-content__button1" type="button" onclick="calcularAreaTriangulo()">
+                        Calcule el area
+                   </button> 
+              </label>
+              <label class="card" for="radio-3" id="card-3">
+                <h2>Calcula el area y permietro de un Circulo</h2>
+               
+                    <label for="InputCuadrado">
+                        Escribe cuanto mide cel radio
+                    </label>
+                        <input type="number" name="" id="InputCirculo">
+                        <button type="button" onclick="calcularPerimetroCirculo()">
+                            Calcule el perimetro
+                        </button>
+                        <button type="button" onclick="calcularAreaCirculo()">
+                            Calcule el area
+                        </button> 
+              </label>
+            </div>
+          </div>
 
-</body>
-</html>
+      </section>
+      <section class="modal1 hidden1">
+        <div class="modal-content1">
+          <img class="modal-content__close1" src="https://img.icons8.com/windows/32/000000/macos-close.png" alt="ícono de cerrar" />
+  
+          <div class="modal-content__slider1">
+            <input class="check" type="radio" name="slider-2" id="radio-11" checked>
+            <input class="check" type="radio" name="slider-2" id="radio-21">
+            <input class="check" type="radio" name="slider-2" id="radio-31">
+  
+            <div class="cards1">
+              <label class="card1" for="radio-11" id="card-11">
+                <img src="" alt="2">
+              </label>
+              <label class="card1" for="radio-21" id="card-21">
+                <img src="" alt="3">
+              </label>
+              <label class="card1" for="radio-31" id="card-31">
+                <img src="" alt="4">
+              </label>
+            </div>
+          </div>
+  
+          <button class="modal-content__button1">Lo quiero!</button>
+      </section>
+      <section class="modal2 hidden2">
+        <div class="modal-content2">
+          <img class="modal-content__close2" src="https://img.icons8.com/windows/32/000000/macos-close.png" alt="ícono de cerrar" />
+  
+          <div class="modal-content__slider2">
+            <input class="check" type="radio" name="slider-3" id="radio-12" checked>
+            <input class="check" type="radio" name="slider-3" id="radio-22">
+            <input class="check" type="radio" name="slider-3" id="radio-32">
+  
+            <div class="cards2">
+              <label class="card2" for="radio-12" id="card-12">
+                <img src="https://static.wikia.nocookie.net/lego-marvelsuperheroes/images/5/52/Spider-Man.png/revision/latest/top-crop/width/360/height/450?cb=20180724193709" alt="">
+              </label>
+              <label class="card2" for="radio-22" id="card-22">
+                <img src="https://i.pinimg.com/originals/a6/57/24/a6572497d91badc608615e399fdc3444.png" alt="">
+              </label>
+              <label class="card2" for="radio-32" id="card-32">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/46694fc5-76fc-4293-9b54-3038569ae18d/de1ddmr-fe1cfbf1-11bd-4a43-9fa6-29094ef976e6.png/v1/fill/w_501,h_545,strp/lego_spider_man__gr_verse__by_jeageruzumaki_de1ddmr-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD01NDUiLCJwYXRoIjoiXC9mXC80NjY5NGZjNS03NmZjLTQyOTMtOWI1NC0zMDM4NTY5YWUxOGRcL2RlMWRkbXItZmUxY2ZiZjEtMTFiZC00YTQzLTlmYTYtMjkwOTRlZjk3NmU2LnBuZyIsIndpZHRoIjoiPD01MDEifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.AcRterl9A5yjbM5zbttem4hy9PsbfFh9Mio9TVuM47Q" alt="">
+              </label>
+            </div>
+          </div>
+  
+          <button class="modal-content__button2">Lo quiero!</button>
+      </section>
+    </div>
+  </body>
+  <script>
+   const modal = document.querySelector('.modal')
+   const modal1 = document.querySelector('.modal1')
+   const modal2 = document.querySelector('.modal2')
+  const closeIcon = document.querySelector('.modal-content__close')
+  const closeIcon1 = document.querySelector('.modal-content__close1')
+  const closeIcon2 = document.querySelector('.modal-content__close2')
+
+  const button1 = document.querySelector('#button1')
+  const button2 = document.querySelector('#button2')
+  const button3 = document.querySelector('#button3')
+
+  button1.addEventListener('click', () => {
+    modal.classList.remove('hidden')
+    modal.classList.add('visible')
+  })
+  button2.addEventListener('click', () => {
+    modal1.classList.remove('hidden1')
+    modal1.classList.add('visible1')
+  })
+  button3.addEventListener('click', () => {
+    modal2.classList.remove('hidden2')
+    modal2.classList.add('visible2')
+  })
+
+  closeIcon.addEventListener('click', () => {
+    modal.classList.remove('visible')
+    modal.classList.add('hidden')
+  })
+  closeIcon1.addEventListener('click', () => {
+    modal1.classList.remove('visible1')
+    modal1.classList.add('hidden1')
+  })
+  closeIcon2.addEventListener('click', () => {
+    modal2.classList.remove('visible2')
+    modal2.classList.add('hidden2')
+  })
+  </script>
+  </html>
